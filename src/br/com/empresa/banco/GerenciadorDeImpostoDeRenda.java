@@ -1,3 +1,5 @@
+package br.com.empresa.banco;
+import br.com.empresa.conta.Tributavel;
 
 public class GerenciadorDeImpostoDeRenda {
     private double total;

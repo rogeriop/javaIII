@@ -1,5 +1,6 @@
+package br.com.empresa.conta;
 
-abstract class Conta {
+public abstract class Conta {
     protected double saldo;
 
     public double getSaldo() {

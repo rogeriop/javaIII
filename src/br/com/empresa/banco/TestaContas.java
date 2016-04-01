@@ -1,5 +1,10 @@
+package br.com.empresa.banco;
+import br.com.empresa.conta.Conta;
+import br.com.empresa.conta.ContaCorrente;
+import br.com.empresa.conta.ContaPoupanca;
+import br.com.empresa.conta.ValorInvalidoException;
 
-        public class TestaContas {
+public class TestaContas {
             public static void main(String[] args) throws ValorInvalidoException {
                 Conta c = new ContaCorrente();
                 ContaCorrente cc = new ContaCorrente();

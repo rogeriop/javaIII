@@ -1,5 +1,11 @@
+package br.com.empresa.banco;
+import br.com.empresa.banco.sistema.AtualizadorDeContas;
+import br.com.empresa.conta.Conta;
+import br.com.empresa.conta.ContaCorrente;
+import br.com.empresa.conta.ContaPoupanca;
+import br.com.empresa.conta.ValorInvalidoException;
 
-        public class TestaAtualizadorDeContas {
+public class TestaAtualizadorDeContas {
             public static void main(String[] args) throws ValorInvalidoException {
                 Conta c = new ContaCorrente();
                 Conta cc = new ContaCorrente();

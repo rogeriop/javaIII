@@ -1,4 +1,5 @@
 
+
 public class TestaFuncionario {
 	public static void main(String[] args) {
 		Funcionario joao = new Gerente();
