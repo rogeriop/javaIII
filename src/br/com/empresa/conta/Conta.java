@@ -2,6 +2,8 @@ package br.com.empresa.conta;
 
 public abstract class Conta {
     protected double saldo;
+    protected int numero;
+    protected String titular;
 
     public double getSaldo() {
         return this.saldo;
@@ -23,5 +25,35 @@ public abstract class Conta {
     
     public void setSaldo(double saldo) {
     	this.saldo = saldo;
+    }
+    
+    public int getNumero() {
+    	return this.numero;
+    }
+    
+    public void setNumero(int numero) {
+    	this.numero = numero;
+    }
+    
+    public String getTitular() {
+    	return this.titular;
+    }
+    
+    public void setTitular(String titular) {
+    	this.titular = titular;
+    }
+    
+    @Override
+    public String toString() {
+    	// TODO Auto-generated method stub
+    	return "Uma conta com valor = " + this.saldo;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+    	// TODO Auto-generated method stub
+    	Conta outraConta = (Conta) obj;
+    	return (this.numero == outraConta.numero) &&
+    		   ( this.titular == outraConta.titular);
     }
 }
